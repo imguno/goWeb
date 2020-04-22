@@ -3,10 +3,9 @@ package main
 import (
 	"net/http"
 
-	"./myapp"
+	"github.com/imguno/goWeb/myapp"
 )
 
 func main() {
-
-	http.ListenAndServe(":3000", myapp.NewHttpHandler())
+	http.ListenAndServe(":3000", myapp.NewHTTPHandler())
 }
